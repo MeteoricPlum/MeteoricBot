@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const PREFIX = '!';
+const PREFIX = '#';
 
 bot.on('ready', () =>{
   console.log('This bot is online.');
@@ -18,6 +18,9 @@ bot.on('message', message=>{
     case 'website':
         message.channel.send('https://www.twitch.tv/meteoricplum')
       break;
+
+    case 'help':
+        messsage.channel.send("This should display help but won´t");
 
     default:
 
