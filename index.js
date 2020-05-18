@@ -43,6 +43,10 @@ bot.on('message', message=>{
         message.channel.send('Acaso dijiste... champisbon?')
       break;
 
+    case 'ian':
+        message.channel.send('Jajajaja el costillas, esta bien cagado ese wey')
+      break;
+
     default:
 
   }
