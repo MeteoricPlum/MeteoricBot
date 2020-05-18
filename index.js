@@ -55,7 +55,7 @@ bot.on('message', message=>{
         message.channel.send(':o la novia asiatica del champisbon')
       break;
 
-    /*case 'play':
+    case 'play':
 
         function play(connection,message){
           var server = servers[message.guild.id];
