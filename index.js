@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const ytdl = require("ytdl-core");
+//const ytdl = require("ytdl-core");
 
 const PREFIX = '$';
 
@@ -55,7 +55,7 @@ bot.on('message', message=>{
         message.channel.send(':o la novia asiatica del champisbon')
       break;
 
-    case 'play':
+    /*case 'play':
 
         function play(connection,message){
           var server = servers[message.guild.id];
@@ -93,7 +93,7 @@ bot.on('message', message=>{
         if(!message.guild.VoiceConnection) message.member.VoiceChannel.join().then(function(connection){
           play(connection,message);
         });
-      break;
+      break;*/
 
     default:
 
