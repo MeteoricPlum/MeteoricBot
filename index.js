@@ -47,6 +47,10 @@ bot.on('message', message=>{
         message.channel.send('Jajajaja el costillas, esta bien cagado ese wey')
       break;
 
+    case 'gaby':
+        message.channel.send(':o la novia asiatica del champisbon')
+      break;
+
     default:
 
   }
