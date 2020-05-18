@@ -22,7 +22,7 @@ bot.on('message', message=>{
     case 'help':
         messsage.channel.send("This should display help but won´t")
       break;
-      
+
     case 'otto':
         message.channel.send("El otto es gei 8===D")
       break;
@@ -34,20 +34,6 @@ bot.on('message', message=>{
     case 'love':
         message.channel.reply('Tqm bro <3')
       break;
-
-    case 'suerte':
-        if(!args[1]) return message.reply('Error escoge un numero del 1 al 5');
-
-        switch (args[1]) {
-          case '1':
-              message.channel.send('Estás en el lugar perfecto para llegar desde aquí')
-            break;
-          default:
-
-        }
-      break;
-
-
 
     default:
 
