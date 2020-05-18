@@ -20,7 +20,11 @@ bot.on('message', message=>{
       break;
 
     case 'help':
-        messsage.channel.send("This should display help but won´t");
+        messsage.channel.send("This should display help but won´t")
+      break;
+    case 'otto':
+        message.channel.send("El otto es gei 8===D")
+      break;
 
     default:
 
