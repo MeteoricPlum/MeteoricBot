@@ -25,6 +25,9 @@ bot.on('message', message=>{
     case 'otto':
         message.channel.send("El otto es gei 8===D")
       break;
+    case 'joksan':
+        message.channel.send("Ese wey simpea a la jurian y no lo pelaaa. Fuckin mint")
+      break;
 
     default:
 
