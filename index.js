@@ -23,6 +23,10 @@ bot.on('message', message=>{
         message.channel.send('https://www.twitch.tv/meteoricplum')
       break;
 
+    case 'bano':
+        message.channel.send('el buen bano peruano')
+      break;
+
     case 'help':
         messsage.channel.send("This should display help but won´t")
       break;
