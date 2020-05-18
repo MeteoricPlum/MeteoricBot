@@ -22,15 +22,19 @@ bot.on('message', message=>{
     case 'help':
         messsage.channel.send("This should display help but won´t")
       break;
+      
     case 'otto':
         message.channel.send("El otto es gei 8===D")
       break;
+
     case 'joksan':
         message.channel.send("Ese wey simpea a la Jules y no lo pelaaa. Fuckin mint")
       break;
+
     case 'love':
         message.channel.reply('Tqm bro <3')
       break;
+
     case 'suerte':
         if(!args[1]) return message.reply('Error escoge un numero del 1 al 5');
 
@@ -43,7 +47,7 @@ bot.on('message', message=>{
         }
       break;
 
-    
+
 
     default:
 
