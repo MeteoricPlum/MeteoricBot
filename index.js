@@ -32,7 +32,15 @@ bot.on('message', message=>{
       break;
 
     case 'love':
-        message.channel.reply('Tqm bro <3')
+        message.reply('Tqm bro <3')
+      break;
+
+    case 'victor':
+        message.channel.send('Les faltan manos para pelarsela a ese crack')
+      break;
+
+    case 'santis':
+        message.channel.send('Acaso dijiste... champisbon?')
       break;
 
     default:
