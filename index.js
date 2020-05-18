@@ -59,6 +59,14 @@ bot.on('message', message=>{
         message.channel.send(':o la novia asiatica del champisbon')
       break;
 
+    case 'menfi':
+        message.channel.send('ah no mames se esta quedando pelon :(')
+      break;
+
+    case 'flami':
+        message.channel.send('Ese wey es Silver 2 en csgo, valorant y en la vida ajajajaj')
+      break;
+
     /*case 'play':
 
         function play(connection,message){
