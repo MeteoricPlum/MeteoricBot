@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-//const ytdl = require("ytdl-core");
+const ytdl = require("ytdl-core");
 
 const PREFIX = '$';
 
@@ -67,45 +67,34 @@ bot.on('message', message=>{
         message.channel.send('Ese wey es Silver 2 en csgo, valorant y en la vida ajajajaj')
       break;
 
-    /*case 'play':
+      case 'play':
 
-        function play(connection,message){
-          var server = servers[message.guild.id];
+          //let songs = new Queue();
 
-          server.dispatcher = connection.playStream(ytdl(server.queue[0],{filter: "audioonly"}));
+          if(!args[1]){
+            message.channel.send('ocupo un link si no es molestia');
+            return;
+          }
+          if(!message.member.voice.channel){
+            message.channel.send('Epale mano como asi, metete a un canal de voz marrano');
+            return;
+          }else{
 
-          server.queue.shift();
+            var cancion = args[1];
 
-          server.dispatcher.on("end", function(){
-            if(server.queue[0]){
-              play(connection,message);
-            }else{
-              connection.disconnect();
+            //songs.enqueue(args[1]);
+
+            const connection =  await message.member.voice.channel.join();
+
+            const dispatcher = connection.play(ytdl(cancion, { filter: 'audioonly'}));
+
+            songs.dequeue();
+
+            if(songs.isEmpty() == 0){
+              message.member.VoiceChannel.leave();
             }
-          });
-
-        }
-
-        if(!args[1]){
-          message.channel.send('ocupo un link si no es molestia');
-          return;
-        }
-        if(message.member.VoiceChannel){
-          message.channel.send('Epale mano como asi, metete a un canal de voz marrano');
-          return;
-        }
-        if(!servers[message.guild.id]) servers[message.guild.id] = {
-          queue: []
-        }
-
-        var server = servers[message.guild.id];
-
-        server.queue.push(args[1]);
-
-        if(!message.guild.VoiceConnection) message.member.VoiceChannel.join().then(function(connection){
-          play(connection,message);
-        });
-      break;*/
+          }
+      break;
 
     default:
 
