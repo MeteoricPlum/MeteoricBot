@@ -78,8 +78,9 @@ bot.on('message', async message=>{
           if(!message.member.voice.channel){
             message.channel.send('Epale mano como asi, metete a un canal de voz marrano');
             return;
-          }else{
+          }
 
+          if(message.member.voice.channel){
             var cancion = args[1];
 
             //songs.enqueue(args[1]);
