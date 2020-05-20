@@ -11,7 +11,7 @@ bot.on('ready', () =>{
   console.log('This bot is online.');
 });
 
-bot.on('message', message=>{
+bot.on('message', async message=>{
   let args = message.content.substring(PREFIX.length).split(" ");
 
   switch (args[0]) {
