@@ -81,19 +81,19 @@ bot.on('message', async message=>{
           }
 
           if(message.member.voice.channel){
-            var cancion = args[1];
+            var song = args[1];
 
             //songs.enqueue(args[1]);
 
             const connection =  await message.member.voice.channel.join();
 
-            const dispatcher = connection.play(ytdl(cancion, { filter: 'audioonly'}));
+            const dispatcher = connection.play(ytdl(song, { filter: 'audioonly'}));
 
             //songs.dequeue();
 
-            if(songs.isEmpty() == 0){
+            /*if(songs.isEmpty() == 0){
               message.member.VoiceChannel.leave();
-            }
+            }*/
           }
       break;
 
