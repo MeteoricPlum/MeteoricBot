@@ -89,7 +89,7 @@ bot.on('message', async message=>{
 
             const dispatcher = connection.play(ytdl(cancion, { filter: 'audioonly'}));
 
-            songs.dequeue();
+            //songs.dequeue();
 
             if(songs.isEmpty() == 0){
               message.member.VoiceChannel.leave();
