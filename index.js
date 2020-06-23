@@ -48,7 +48,7 @@ bot.on('message', async message=>{
       break;
 
     case 'santis':
-        message.channel.send('Acaso dijiste... champisbon?')
+        message.channel.send('Recuerda... bros before hoes. Simpear en exceso es muy peruano de tu parte.')
       break;
 
     case 'ian':
