@@ -48,7 +48,17 @@ bot.on('message', async message=>{
       break;
 
     case 'santis':
-        message.channel.send('Recuerda... bros before hoes. Simpear en exceso es muy peruano de tu parte.')
+        if(!args[1]){
+          message.channel.send("Para flame leve usar 'santis 1'.\n Para flame maestro usar 'santis 2'")
+        }
+
+        if(args[1] == '1'){
+          message.channel.send('Acaso dijiste... champisbon?')
+        }
+        if(args[1] == '2'){
+          message.channel.send('Recuerda... bros before hoes. Simpear en exceso es muy peruano de tu parte.')
+        }
+
       break;
 
     case 'ian':
