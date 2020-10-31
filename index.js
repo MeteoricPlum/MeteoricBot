@@ -15,6 +15,12 @@ bot.on('message', async message=>{
   let args = message.content.substring(PREFIX.length).split(" ");
 
   switch (args[0]) {
+    case 'she':
+        message.channel.send('Usando esto? Mi pana otra vez sad, se que es dificil pero ya deja de pensarla solo te haces daño. Tu puedes.')
+        
+    case 'os':
+        message.channel.send('Stay strong mi pana, hay que darle pa´lante. ')
+
     case 'ping':
         message.channel.send('pong!')
       break;
