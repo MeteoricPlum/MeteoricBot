@@ -13,6 +13,7 @@ bot.on('ready', () =>{
 
 bot.on('message', async message=>{
   let args = message.content.substring(PREFIX.length).split(" ");
+  var comandos = ["os","ping","website","bano","help","otto","joksan","love","victor","santis","ian","gaby","menfi","flami"];
 
   switch (args[0]) {
     case 'she':
@@ -37,6 +38,9 @@ bot.on('message', async message=>{
 
     case 'help':
         message.channel.send("This should display help but won´t")
+        for(const comand of comandos){
+          message.channel.send(comand);
+        }
       break;
 
     case 'otto':
