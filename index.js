@@ -36,7 +36,7 @@ bot.on('message', async message=>{
       break;
 
     case 'help':
-        messsage.channel.send("This should display help but won´t")
+        message.channel.send("This should display help but won´t")
       break;
 
     case 'otto':
