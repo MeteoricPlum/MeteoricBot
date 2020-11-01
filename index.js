@@ -46,7 +46,7 @@ bot.on('message', async message=>{
     if(args[1] == '1'){
       message.channel.send("El otto es gei 8===D:")
     }
-    if(args[2] == '2'{
+    if(args[1] == '2'{
       message.channel.send("Chilla rata.")
     }
       break;
