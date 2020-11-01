@@ -40,7 +40,15 @@ bot.on('message', async message=>{
       break;
 
     case 'otto':
-        message.channel.send("El otto es gei 8===D")
+    if(!args[1]){
+      message.channel.send("Usar 'otto 1' u 'otto 2'")
+    }
+    if(args[1] == '1'){
+      message.channel.send("El otto es gei 8===D:")
+    }
+    if(args[2] == '2'{
+      message.channel.send("Chilla rata.")
+    }
       break;
 
     case 'joksan':
