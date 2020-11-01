@@ -52,7 +52,7 @@ bot.on('message', async message=>{
       break;
 
     case 'joksan':
-        message.channel.send("Ese wey simpea a la Jules y no lo pelaaa. Fuckin mint")
+        message.channel.send("Mi pana el chapulin.")
       break;
 
     case 'love':
