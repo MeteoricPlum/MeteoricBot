@@ -17,9 +17,11 @@ bot.on('message', async message=>{
   switch (args[0]) {
     case 'she':
         message.channel.send('Usando esto? Mi pana otra vez sad, se que es dificil pero ya deja de pensarla solo te haces daño. Tu puedes.')
-        
+      break;
+
     case 'os':
         message.channel.send('Stay strong mi pana, hay que darle pa´lante. ')
+      break;
 
     case 'ping':
         message.channel.send('pong!')
