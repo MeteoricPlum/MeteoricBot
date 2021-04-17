@@ -16,9 +16,6 @@ bot.on('message', async message=>{
   var comandos = ["os","ping","website","bano","help","otto","joksan","love","victor","santis","ian","gaby","menfi","flami"];
 
   switch (args[0]) {
-    case 'she':
-        message.channel.send('Usando esto? Mi pana otra vez sad, se que es dificil pero ya deja de pensarla solo te haces daño. Tu puedes.')
-      break;
 
     case 'os':
         message.channel.send('Stay strong mi pana, hay que darle pa´lante. ')
@@ -29,7 +26,7 @@ bot.on('message', async message=>{
       break;
 
     case 'website':
-        message.channel.send('https://www.twitch.tv/meteoricplum')
+        message.channel.send(' @everyone https://www.twitch.tv/meteoricplum')
       break;
 
     case 'bano':
