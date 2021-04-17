@@ -134,7 +134,7 @@ bot.on('message', async message=>{
     }
   }else{
     message.channel.send("Prefijo invalido. Usar $ antes del comando. TQM <3")
-    return;
+    break;
   }
 
 })
