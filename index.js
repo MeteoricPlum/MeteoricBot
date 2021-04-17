@@ -12,11 +12,11 @@ bot.on('ready', () =>{
 });
 
 bot.on('message', async message=>{
+  let prefix_ref = message.content.substring(0,1);
   let args = message.content.substring(PREFIX.length).split(" ");
   var comandos = ["os","ping","website","bano","help","otto","joksan","love","victor","santis","ian","gaby","menfi","flami"];
-  var aux = args[0];
 
-  if(aux[0] == PREFIX){
+  if(prefix_ref == PREFIX){
     switch (args[0]) {
 
       case 'os':
@@ -132,9 +132,6 @@ bot.on('message', async message=>{
       default:
   
     }
-  }else{
-    message.channel.send("Prefijo invalido. Usar $ antes del comando. TQM <3")
-    break;
   }
 
 })
