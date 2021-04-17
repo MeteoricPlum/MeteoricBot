@@ -45,13 +45,16 @@ bot.on('message', async message=>{
 
     case 'otto':
     if(!args[1]){
-      message.channel.send("Usar 'otto 1' u 'otto 2'")
+      message.channel.send("Usar 'otto 1','otto 2','otto stream'")
     }
     if(args[1] == '1'){
-      message.channel.send("El otto es gei 8===D:")
+      message.channel.send("El otto es gei xd 8===D:")
     }
     if(args[1] == '2'){
       message.channel.send("Chilla rata.")
+    }
+    if(args[1] == 'stream'){
+      message.channel.send("https://www.twitch.tv/gearsrene123")
     }
       break;
 
