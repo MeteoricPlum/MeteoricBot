@@ -26,7 +26,7 @@ bot.on('message', async message=>{
       break;
 
     case 'website':
-        message.channel.send(' @everyone https://www.twitch.tv/meteoricplum')
+        message.channel.send(' @everyone \n https://www.twitch.tv/meteoricplum')
       break;
 
     case 'bano':
@@ -51,7 +51,7 @@ bot.on('message', async message=>{
       message.channel.send("Chilla rata.")
     }
     if(args[1] == 'stream'){
-      message.channel.send("https://www.twitch.tv/gearsrene123")
+      message.channel.send("@everyone \n https://www.twitch.tv/gearsrene123")
     }
       break;
 
