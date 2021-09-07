@@ -58,7 +58,15 @@ bot.on('message', async message=>{
         break;
   
       case 'joksan':
+        if(!args[1]){
+          message.channel.send("Usar 'joksan 1', 'joksan stream'")
+        }
+        if(args[1] == 'stream'){
+          message.channel.send("@everyone \n http://twitch.tv/jokijoksan")
+        }
+        if(args[1] == '1'){
           message.channel.send("Mi pana el chapulin.")
+        }
         break;
   
       case 'love':
@@ -71,7 +79,10 @@ bot.on('message', async message=>{
   
       case 'santis':
           if(!args[1]){
-            message.channel.send("Para flame leve usar 'santis 1'.\n Para flame maestro usar 'santis 2'")
+            message.channel.send("Usar 'santis 1','santis 2','santis stream'")
+          }
+          if(args[1] == 'stream'){
+            message.channel.send("@everyone \n https://www.twitch.tv/fittercomposed")
           }
   
           if(args[1] == '1'){
