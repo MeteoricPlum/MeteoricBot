@@ -34,6 +34,12 @@ bot.on('message', async message=>{
       case 'bano':
           message.channel.send('el buen bano peruano')
         break;
+        
+      case 'uri':
+          if(args[1] == 'stream'){
+            message.channel.send(' @everyone \n  https://twitch.tv/Angelx_urielx')
+          }
+        break;
   
       case 'help':
           message.channel.send("This should display help but won´t")
