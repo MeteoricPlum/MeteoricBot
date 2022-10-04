@@ -19,6 +19,9 @@ bot.on('message', async message => {
   if (prefix_ref == PREFIX) {
     switch (args[0]) {
 
+      case 'bot':
+          message.channel.send('<@!this is the remix>')
+
       case 'os':
         message.channel.send('Stay strong mi pana, hay que darle pa´lante. ')
         break;
