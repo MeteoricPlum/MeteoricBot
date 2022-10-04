@@ -62,7 +62,7 @@ bot.on('message', async message=>{
         message.channel.send("@everyone \n https://www.twitch.tv/gearsrene123")
       }
       if(args[1] == 'paga'){
-        message.channel.send("@ElJeringasDrugs Favor de pagar sus deudas lo antes posible. \n Gracias.")
+      	message.channel.send("@ElJeringasDrugs Favor de pagar sus deudas lo antes posible. \n Gracias.")
       }
         break;
   
@@ -105,10 +105,6 @@ bot.on('message', async message=>{
   
       case 'ian':
           message.channel.send('Jajajaja el costillas, esta bien cagado ese wey')
-        break;
-  
-      case 'gaby':
-          message.channel.send(':o la novia asiatica del champisbon')
         break;
   
       case 'menfi':
