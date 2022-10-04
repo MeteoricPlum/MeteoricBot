@@ -20,9 +20,9 @@ bot.on('message', async message => {
     switch (args[0]) {
 
       case 'bot':
-          message.channel.send('<@!this is the remix>')
+          message.channel.send(client.users.cache.find(u => u.tag === 'MateoPun#7582').id)
       break;
-      
+
       case 'os':
         message.channel.send('Stay strong mi pana, hay que darle pa´lante. ')
         break;
