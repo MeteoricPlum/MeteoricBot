@@ -61,6 +61,9 @@ bot.on('message', async message=>{
       if(args[1] == 'stream'){
         message.channel.send("@everyone \n https://www.twitch.tv/gearsrene123")
       }
+      if(args[1] == 'paga'){
+        message.channel.send("@ElJeringasDrugs Favor de pagar sus deudas lo antes posible. \n Gracias.")
+      }
         break;
   
       case 'joksan':
